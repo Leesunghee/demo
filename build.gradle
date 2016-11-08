@@ -29,9 +29,9 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
-	compile('org.springframework.boot:spring-boot-starter-web') {
-		exclude group: 'com.fasterxml.jackson.core'
-	}
-	complie('com.fasterxml.jackson.core:jackson-databind:2.3.1')
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-security')
+	compile('net.sourceforge.nekohtml:nekohtml')
+	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
