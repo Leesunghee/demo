@@ -11,13 +11,29 @@ spring:
       properties.hibernate.format_sql: true
       properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
 
-
+spring.profiles: logging-info
 logging:
-  path: /Users/hds/dev/springboot_practice/demo/logs/
-  file: 111BookWorm.log
+  file: logs/application.log
   level:
     root: INFO
+
+    org:
+      springframework.web: INFO
+ #  org.hibernate.SQL: INFO
+
+
+spring.profiles: logging-debug
+logging:
+  file: logs/application.log
+  level:
     org:
       springframework:
         security: DEBUG
+    org:
+      springframework.web: DEBUG
+     # org.hibernate.SQL: DEBUG
 
+spring.profiles: logging-daily
+logging:
+  config:
+    classpath: logback-spring.xml
