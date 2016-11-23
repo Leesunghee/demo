@@ -13,7 +13,7 @@ import java.util.Collection;
  * Created by hds on 2016. 11. 15..
  */
 
-@Entity
+@Entity(name="reader")
 public class Reader implements UserDetails {
 
     private static final long serialVersionUID = 1L;

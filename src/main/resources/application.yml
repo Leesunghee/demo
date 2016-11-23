@@ -1,0 +1,23 @@
+spring:
+    datasource:
+      url: jdbc:mysql://108.61.246.175:3306/stdb
+      username: usrsta
+      password: usrsta
+      driver-class-name: com.mysql.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: create-drop
+      show-sql: true
+      properties.hibernate.format_sql: true
+      properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+logging:
+  path: /Users/hds/dev/springboot_practice/demo/logs/
+  file: 111BookWorm.log
+  level:
+    root: INFO
+    org:
+      springframework:
+        security: DEBUG
+
