@@ -43,5 +43,6 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-social-facebook')
 	compile('net.sourceforge.nekohtml:nekohtml')
 	runtime('mysql:mysql-connector-java')
+
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

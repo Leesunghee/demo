@@ -13,3 +13,29 @@ spring:
 
 amazon:
  associateId: habuma-20
+
+
+ spring:
+  profiles:
+    active: production
+ logging:
+    level:
+      root: INFO
+
+---
+
+spring:
+  profiles: development
+logging:
+  level:
+   root: DEBUG
+
+---
+
+spring:
+  profiles: production
+logging:
+  file: BookWorm.log
+  level:
+    root: WARN
+
